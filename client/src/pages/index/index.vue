@@ -143,7 +143,11 @@ export default {
               return [5, 6, 7].includes(+v.key);
             })
             .map(v => {
-              return this.$apis.getKnowledgeList({ cat: v.key });
+              return this.$apis.getKnowledgeList({
+                cat: v.key,
+                pageNum: 1,
+                pageSize: 5
+              });
             });
 
           return Promise.all(proms);

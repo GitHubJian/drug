@@ -5,15 +5,15 @@ export const navList = [
   },
   {
     name: '全部药品',
-    href: '/pages/list?catId=0'
+    href: '/pages/list?cat=0'
   },
   {
     name: '肿瘤药物',
-    href: '/pages/list?catId=1'
+    href: '/pages/list?cat=1'
   },
   {
     name: '肝病药物',
-    href: '/pages/list?catId=2'
+    href: '/pages/list?cat=2'
   },
   {
     name: '药品知识',
