@@ -1,0 +1,110 @@
+$gap0: 0;
+$gap1: 10px;
+$gap2: 15px;
+$gap3: 20px;
+
+$color: #e5343c;
+$color2: #00c66a;
+$color3: #ff9528;
+
+@mixin clearfix {
+  &::after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+
+@mixin generateGrid() {
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      float: left;
+      width: (100% / 12 * $i);
+      padding: 0 $gap2;
+    }
+  }
+}
+
+@mixin generateXGrid($x) {
+  .col-#{$x}ths {
+    float: left;
+    width: (100% / $x * 1);
+  }
+}
+
+.row {
+  @include clearfix;
+
+  margin-right: -$gap2;
+  margin-left: -$gap2;
+
+  @include generateGrid();
+
+  @include generateXGrid(5);
+
+  @include generateXGrid(8);
+}
+
+.bg-1 {
+  background: $color;
+}
+
+.c-2 {
+  color: $color2;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.clearfix {
+  &::after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+
+.pl {
+  float: left;
+}
+
+.pr {
+  float: right;
+}
+
+.gap1 {
+  margin-top: 10px;
+}
+
+.mt3 {
+  margin-top: 15px;
+}
+
+.mt-3xl {
+  margin-top: 50px;
+}
+
+.mt-2xl {
+  margin-top: 40px;
+}
+
+.mt-l {
+  margin-top: 30px;
+}
+
+.mt-m {
+  margin-top: 20px;
+}
+
+.mt-s {
+  margin-top: 15px;
+}

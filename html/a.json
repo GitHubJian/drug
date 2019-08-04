@@ -1,0 +1,23 @@
+[
+  {
+    "node": "image",
+    "src": "url"
+  },
+  {
+    "node": "span",
+    "text": "行内标记"
+  },
+  {
+    "node": "h1",
+    "text": "这是一个标题"
+  },
+  {
+    "node": "p",
+    "text": "这是一个段落"
+  },
+  {
+    "node": "a",
+    "text": "这是一个超链接",
+    "href": "url"
+  }
+]

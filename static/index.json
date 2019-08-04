@@ -1,0 +1,30 @@
+{
+    "about": {
+        "js": "/static/js/about.d89464424e3788c9795a.js"
+    },
+    "detail": {
+        "js": "/static/js/detail.3e5b0b3d8a47b8b7b1e0.js"
+    },
+    "draft": {
+        "js": "/static/js/draft.5d2767215643b5a846e0.js"
+    },
+    "global": {
+        "css": "/static/css/global.314ab75bb817a3119b38.css",
+        "js": "/static/js/global.0eadfd77348fd1af9ef1.js"
+    },
+    "index": {
+        "js": "/static/js/index.8dbd1bcbf719d4277e4b.js"
+    },
+    "knowledge": {
+        "js": "/static/js/knowledge.05c17b114171ae3bb933.js"
+    },
+    "list": {
+        "js": "/static/js/list.39bdf44d719d77a7383f.js"
+    },
+    "us": {
+        "js": "/static/js/us.89c66e33628666bf1461.js"
+    },
+    "vip": {
+        "js": "/static/js/vip.87d6fdc1b1641d612f8c.js"
+    }
+}

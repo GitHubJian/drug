@@ -1,0 +1,6 @@
+.DS_Store
+.vscode
+.temp
+node_modules
+# static
+# dist

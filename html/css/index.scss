@@ -1,0 +1,492 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.nav-wrapper {
+  background-color: red;
+
+  .nav {
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 1200px;
+
+    .nav-item {
+      float: left;
+
+      a {
+        position: relative;
+        margin: 0 11px;
+        display: block;
+        height: 50px;
+        font-size: 16px;
+        line-height: 50px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.banner-layout {
+  width: 100%;
+
+  .banner-list {
+    .banner-item {
+      background: black;
+      height: 450px;
+    }
+  }
+}
+
+.floor-wrapper {
+  width: 1100px;
+  margin: 0 auto;
+
+  .floor-title {
+    font-size: 28px;
+    text-align: center;
+    color: red;
+  }
+}
+
+.media {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .media-left {
+    float: left;
+  }
+  .media-right {
+    float: left;
+  }
+}
+
+.type-wrapper {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .type-left {
+    float: left;
+    width: 220px;
+    margin-right: 20px;
+
+    .type-title {
+      width: 100%;
+      height: 56px;
+      line-height: 56px;
+      background: red;
+      color: #fff;
+      text-align: center;
+    }
+
+    .type-list {
+      margin-top: 10px;
+
+      .type-item {
+        a {
+          display: block;
+          width: 100%;
+          height: 76px;
+          font-size: 16px;
+          line-height: 76px;
+          color: #5a5a5a;
+          background-color: #f2f2f2;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .type-right {
+    float: left;
+    width: 860px;
+
+    .type-search-wrapper {
+      @include clearfix;
+
+      padding: 0 40px;
+      height: 56px;
+      line-height: 56px;
+      background-color: red;
+
+      .type-keywords {
+        float: left;
+        font-size: 15px;
+        color: #fff;
+
+        i {
+          margin-right: 5px;
+        }
+      }
+
+      .search-wrapper {
+        @include clearfix;
+        float: right;
+
+        .search-input-wrapper {
+          float: left;
+          .search-input {
+            outline: none;
+            color: #000;
+          }
+        }
+
+        .search-button {
+          margin-top: 13px;
+          float: left;
+          span {
+            display: block;
+            width: 50px;
+            height: 28px;
+            line-height: 28px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: normal;
+            text-align: center;
+            border: #fff 0px solid;
+            background: #ed9797;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .drug-wrapper {
+      margin-top: 10px;
+
+      .drug-list {
+        @include clearfix;
+
+        margin: 0 -5px;
+
+        .drug-item {
+          float: left;
+          width: 25%;
+          padding: 0 5px;
+
+          a {
+            display: block;
+            width: 100%;
+            height: 200px;
+            background: red;
+            border: 1px solid #d9d9d9;
+          }
+
+          .drug-name {
+            font-size: 14px;
+            color: #5a5a5a;
+            line-height: 28px;
+            text-align: center;
+          }
+
+          .drug-price {
+            font-size: 14px;
+            color: #dd3a3a;
+            line-height: 140%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page {
+  @include clearfix;
+
+  font-size: 12px;
+
+  .page-list {
+    float: left;
+    @include clearfix;
+
+    .page-item {
+      float: left;
+      margin-right: 3px;
+      padding: 0 5px;
+      height: 17px;
+      color: #48b9ef;
+      border: 1px solid #f0f0f0;
+      line-height: 17px;
+    }
+  }
+
+  .page-all {
+    float: left;
+    margin-left: 5px;
+    height: 19px;
+    line-height: 19px;
+  }
+}
+
+.partner-wrapper {
+  .partner-list {
+    margin: 0 -5px;
+    @include clearfix;
+
+    .partner-item {
+      float: left;
+      width: 50%;
+      padding: 0 5px;
+
+      .partner-title {
+        position: relative;
+        width: 100%;
+        height: 150px;
+        background: #000;
+        border: 2px solid red;
+
+        .partner-num {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 150px;
+          height: 100%;
+          background: red;
+        }
+      }
+
+      .partner-desc {
+        margin-top: 15px;
+
+        h1 {
+          font-size: 20px;
+          line-height: 28px;
+        }
+
+        p {
+          margin-top: 10px;
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
+.superiority-wrapper {
+  .superiority-list {
+    @include clearfix;
+
+    margin: 0 -4px;
+
+    .superiority-item {
+      float: left;
+      padding: 0 4px;
+      width: 20%;
+
+      .superiority-item-wrapper {
+        border: 1px solid red;
+      }
+
+      .superiority-title {
+        position: relative;
+        width: 100%;
+        height: 182px;
+
+        .superiority-title-image {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: yellow;
+        }
+
+        .superiority-title-num {
+          position: relative;
+          padding-top: 10px;
+          width: 100%;
+          font-size: 120px;
+          color: rgb(221, 58, 58);
+          text-align: center;
+          line-height: 120px;
+          z-index: 10;
+        }
+
+        .superiority-title-name {
+          position: relative;
+          font-size: 18px;
+          color: rgb(221, 58, 58);
+          line-height: 25px;
+          text-align: center;
+          z-index: 10;
+        }
+      }
+
+      .superiority-desc {
+        min-height: 200px;
+        padding: 15px 10px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+        background: red;
+      }
+    }
+  }
+}
+
+.us-wrapper {
+  @include clearfix;
+
+  .us-left {
+    float: left;
+  }
+
+  .us-right {
+    margin-left: 40px;
+    float: left;
+  }
+
+  .us-image {
+    width: 540px;
+    height: 305px;
+  }
+
+  .us-content {
+    padding: 15px;
+    width: 520px;
+    height: 305px;
+    background: red;
+
+    .us-main {
+      border: 1px solid #fff;
+      height: 275px;
+    }
+
+    .us-section {
+      height: 225px;
+    }
+
+    .us-button-box {
+      height: 55px;
+
+      .us-button {
+        float: right;
+        margin-top: 5px;
+        margin-right: 10px;
+        padding: 5px 15px;
+        border: 1px solid #fff;
+      }
+    }
+  }
+}
+
+.news-wrapper {
+  @include clearfix;
+  margin: 0 -15px;
+
+  .news-content {
+    float: left;
+    width: 346px;
+    margin: 0 15px;
+    border: 1px solid #fff;
+  }
+
+  .news-header {
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background: red;
+
+    .news-header-more {
+      float: right;
+      font-size: 12px;
+    }
+  }
+
+  .news-body {
+    border-width: 0 1px 1px 1px;
+    border-color: #ddd;
+    border-style: solid;
+    padding: 0 5px 10px;
+
+    .news-item {
+      @include clearfix;
+
+      padding: 0 10px;
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid #ddd;
+
+      .news-item-icon {
+        float: left;
+        width: 5px;
+        height: 5px;
+      }
+
+      .news-item-title {
+        float: left;
+      }
+    }
+  }
+}
+
+.footer-wrapper {
+  text-align: center;
+  background: rgb(238, 238, 238);
+
+  .map-wrapper {
+  }
+
+  .map-list {
+    display: inline-block;
+
+    @include clearfix;
+
+    .map-item,
+    .map-item-split {
+      float: left;
+      height: 30px;
+      line-height: 30px;
+    }
+
+    .map-item {
+      width: 150px;
+      text-align: center;
+    }
+
+    .map-item-split {
+      border: 1px solid #ddd;
+    }
+  }
+
+  .rg-wrapper {
+    .rg-list {
+      display: inline-block;
+      margin: 0 -10px;
+
+      @include clearfix;
+    }
+
+    .rg-item {
+      float: left;
+      margin: 0 30px;
+      width: 100px;
+      height: 36px;
+      background: red;
+    }
+  }
+
+  .copyright {
+    display: inline;
+    height: 36px;
+    line-height: 36px;
+  }
+}

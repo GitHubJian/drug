@@ -1,0 +1,30 @@
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.layout {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.layout::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.wrapper::after {
+  content: '';
+  clear: both;
+  display: table;
+}
