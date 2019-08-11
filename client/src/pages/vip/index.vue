@@ -84,7 +84,7 @@ export default {
       });
     },
     onMenuClickHandler(id) {
-      this.$qs.go(`/pages/vips?cat=${id}`);
+      this.$qs.go(`/pages/vip?cat=${id}`);
     }
   }
 };
