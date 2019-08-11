@@ -114,7 +114,7 @@ export default {
         }
       ],
       navList: [],
-      id: 1,
+      id: id,
       item: {
         cn_name: "",
         detail: "",

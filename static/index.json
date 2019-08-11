@@ -1,30 +1,30 @@
 {
     "about": {
-        "js": "/static/js/about.12558108b0669ea87549.js"
+        "js": "/static/js/about.8b5669f9c4f23eb3e1b1.js"
     },
     "detail": {
-        "js": "/static/js/detail.7694afb2dd828ac47b4a.js"
+        "js": "/static/js/detail.bf6d61b562558bd1ff5f.js"
     },
     "draft": {
-        "js": "/static/js/draft.af91d59dc26931623895.js"
+        "js": "/static/js/draft.43eb2e91814be968cc5e.js"
     },
     "global": {
         "css": "/static/css/global.314ab75bb817a3119b38.css",
-        "js": "/static/js/global.0eadfd77348fd1af9ef1.js"
+        "js": "/static/js/global.c669edd512ecf0e70591.js"
     },
     "index": {
-        "js": "/static/js/index.bcea8b1e2c2707f6fd84.js"
+        "js": "/static/js/index.000cb836c86c299bbf6d.js"
     },
     "knowledge": {
-        "js": "/static/js/knowledge.23e9c7ec0740cab85a52.js"
+        "js": "/static/js/knowledge.38db69c14132793921fa.js"
     },
     "list": {
-        "js": "/static/js/list.1978994fe754ae2e4c6a.js"
+        "js": "/static/js/list.ec7161c122b527654065.js"
     },
     "us": {
-        "js": "/static/js/us.52b72feddbe6646e4c3b.js"
+        "js": "/static/js/us.c4562b19290dd0d0e980.js"
     },
     "vip": {
-        "js": "/static/js/vip.0a7ac3d54d4ab90d0d50.js"
+        "js": "/static/js/vip.bbd871c4ccb46a1c85e2.js"
     }
 }

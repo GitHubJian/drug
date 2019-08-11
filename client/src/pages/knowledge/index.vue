@@ -19,17 +19,10 @@
               </div>
               <div class="pl drug-wrapper">
                 <d-path-bar></d-path-bar>
-                <d-knowledge-list
-                  :list="knowledgeList"
-                  :onClickHandler="onKnowledgeClickHandler"
-                ></d-knowledge-list>
+                <d-knowledge-list :list="knowledgeList" :onClickHandler="onKnowledgeClickHandler"></d-knowledge-list>
               </div>
             </div>
-            <d-pages
-              pager="5"
-              total="10"
-              :onClickHandler="onPageClickHandler"
-            ></d-pages>
+            <d-pages pager="5" total="10" :onClickHandler="onPageClickHandler"></d-pages>
           </div>
         </d-floor>
       </div>
@@ -49,7 +42,7 @@ export default {
     footerbar: footerbar
   },
   data() {
-    let cat = this.$qs.get("cat") || 1;
+    let cat = this.$qs.get("cat") || 5;
 
     return {
       menuList: [],
@@ -75,7 +68,9 @@ export default {
   methods: {
     getKnowledgeCatList() {
       this.$apis.getKnowledgeCatList().then(res => {
-        this.menuList = res;
+        this.menuList = res.filter(v => {
+          return [5, 6, 7].includes(+v.key);
+        });
       });
     },
     getKnowledgeList(cat = this.cat, pageNum = 1) {

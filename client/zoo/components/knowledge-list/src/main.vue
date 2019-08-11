@@ -12,12 +12,12 @@
         </div>
         <div class="know-main">
           <h3 class="know-title">
-            <span class="highlight">
+            <!-- <span class="highlight">
               [{{ item.typeName }}]
-            </span>
+            </span> -->
             {{ item.title }}
           </h3>
-          <!-- <p class="know-time">{{ item.publishTime }}</p> -->
+          <p class="know-time">{{ item.publish_time }}</p>
           <p class="know-section">{{ item.desc }}</p>
         </div>
       </li>
